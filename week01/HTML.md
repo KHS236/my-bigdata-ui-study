@@ -150,7 +150,7 @@ width:200px;" - 너비 조절
                 <li>
                     1학년
                     <ul>
-                        <li>HTML/CSS/JS/JQEURY</li>
+                        <li>HTML/CSS/JS/JQUERY</li>
                     </ul>
                 </li>
                 <li>
