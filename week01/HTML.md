@@ -90,7 +90,7 @@ head = 눈에 보이는 게 아니라 브라우저한테 지시하는 머리말
     프로페셔널(흔히 웹 퍼블리셔라고 하는 사람들)로 갈수록 넓어진다.
 ```
     < span style="padding:20px; margin:20px; border:1px solid; width:200px; height:200px;" >
-    ---
+---
 
 ## Block / InLine 차이점
 ```html
