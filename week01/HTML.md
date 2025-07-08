@@ -23,7 +23,7 @@
 ```
 ---
 <!DOCTYPE html> : HTML5 문서임을 선언
-<html lang="en"> : "ko" == 페이지 언어를 한국어로 설정
+<html lang="ko"> :  페이지 언어를 한국어로 설정
 <meta charset="UTF-8"> : 인코딩 설정
 <title> : 브라우저 탭 제목
 ---
