@@ -117,7 +117,7 @@ width:200px;" - 너비 조절
         <li>list04</li>
     </ul>
 
-    <!-- ol - li : 순번 있는 리스트 --> (order)
+    <!-- ol - li : 순번 있는 리스트 (order) -->
     <ol>
         <li>list01</li>
         <li>list02</li>
