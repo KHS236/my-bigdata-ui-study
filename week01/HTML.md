@@ -2,11 +2,7 @@
 
 ## HTML 개념
 
-###### Hyper  
-###### Text  
-###### Markup  
-###### Language  
-의 약어  
+###### Hyper | Text | Markup | Language  의 약어  
 웹문서 파일을 제작하는 언어  
 
 
@@ -33,14 +29,13 @@
 ---
 
 <시작>내용</종료>
-ex) <head> </head>
+##### ex) < head > < /head >
 
-내용이 없으면
-<태그 />
-
+내용이 없으면 <태그 />  
 
 
-header = 눈에 보이는 게 아니라 브라우저 지시하는 머리말
+
+header = 눈에 보이는 게 아니라 브라우저한테 지시하는 머리말
 
 
 1. Block 태그 vs Inline 태그
@@ -58,35 +53,44 @@ header = 눈에 보이는 게 아니라 브라우저 지시하는 머리말
 </body>
 
 
-Block
-- 하나의 행을 다 쓰는 녀석
+### Block
+하나의 행을 다 쓰는 녀석  
 개발자도구(f-12) elements로 찍어보기
 
-Line
-- 같은 행을 공유
+### Line
+같은 행을 공유
 
-% <br/>
+### < br/ >
 줄바꿈
 
+
+---
+## Block / InLine
+---
+```
     <h1>HTML</h1>
     HTML을 기술하기 위하여 사용하는 명령어의 집합을 태그(Tag)라고 한다.
     태그는 <p>기본적으로 여는 태그와 닫는 태그로 구성</p>되며,
     닫는 태그 없이 단독으로 이용하는 태그도 있다. 태그에 주는 다양한 옵션은
     모두 여는 태그에 지정하며, 닫는 태그는 태그 효과가 적용되는
     <div style="padding:20px; margin:20px; border:1px solid; width:200px; height:200px;">범위의 끝을 나타내는 기능만 한다.</div>
+```
+    < div style="padding:20px; margin:20px; border:1px solid; width:200px; height:200px;" >
 
 
 
-
+```
     그런데 태그 종류가 수십 가지가 넘는 데다,
     지정가능한 옵션까지 일일이 열거하면 책 한 권 분량이 된다.
     따라서 <span style="padding:20px; margin:20px; border:1px solid; width:200px; .height:200px;">일반인은 사용빈도가 높은 일부 태그만 암기하고,</span> 나머지는
     '태그사전(또는 레퍼런스)'이라고 하는
     도움말 파일을 참고하는 편이다. 물론 암기 범위는 고급 사용자 내지는
     프로페셔널(흔히 웹 퍼블리셔라고 하는 사람들)로 갈수록 넓어진다.
+```
+    < span style="padding:20px; margin:20px; border:1px solid; width:200px; .height:200px;" >
+    ---
 
-
-Block / InLine 차이점
+## Block / InLine 차이점
 (Block)div >>
 "padding:20px; - 박스 내부에 공간 > 박스가 커져서 다 뭉게진다
 margin:20px; - 박스 외부 여백
@@ -100,9 +104,9 @@ border:1px solid; - 박스 만들기
 width:200px;" - 너비 조절
 
 
+---
 
-
-## 03 list
+## list
 
     <!-- ul-li : 순번 없는 리스트 -->
     <ul>
@@ -187,18 +191,19 @@ width:200px;" - 너비 조절
 
 
 ```
-
-
+---
+```
 	ul>li*4
-== ul태그 안에 리스트 4개를 만듦.
+```
+### ul태그 안에 리스트 4개를 만듦.
+---
 
 
 
 
-
-Class
-동일한 스타일링을 위한 틀
-
+## Class
+#### 동일한 스타일링을 위한 틀
+---
 
 ```
 <!-- 클래스 선택자 : '.' -->
@@ -246,10 +251,10 @@ Class
 
 
 
+---
 
-
-단축키
-    복사 shift + alt + ↓
-    코드 정리 shift + alt + f
+### 단축키
+- 복사 shift + alt + ↓
+- 코드 정리 shift + alt + f
 
 
