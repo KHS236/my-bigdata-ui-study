@@ -8,7 +8,7 @@
 
 ## html 기본 구조
 
-```
+```html
 <!DOCTYPE html>
 <html lang="ko">
   <head>
