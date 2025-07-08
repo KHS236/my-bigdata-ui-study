@@ -41,7 +41,7 @@ header = 눈에 보이는 게 아니라 브라우저한테 지시하는 머리�
 1. Block 태그 vs Inline 태그
 
 
-
+```html
 <body>
     <!-- 제목태그 h1~6 -->
     <h1>HELLO WORLD</h1>
@@ -51,7 +51,7 @@ header = 눈에 보이는 게 아니라 브라우저한테 지시하는 머리�
     <h5>HELLO WORLD</h5>
     <h6>HELLO WORLD</h6>
 </body>
-
+```
 
 ### Block
 하나의 행을 다 쓰는 녀석  
@@ -67,7 +67,7 @@ header = 눈에 보이는 게 아니라 브라우저한테 지시하는 머리�
 ---
 ## Block / InLine
 ---
-```
+```html
     <h1>HTML</h1>
     HTML을 기술하기 위하여 사용하는 명령어의 집합을 태그(Tag)라고 한다.
     태그는 <p>기본적으로 여는 태그와 닫는 태그로 구성</p>되며,
@@ -79,7 +79,7 @@ header = 눈에 보이는 게 아니라 브라우저한테 지시하는 머리�
 
 
 
-```
+```html
     그런데 태그 종류가 수십 가지가 넘는 데다,
     지정가능한 옵션까지 일일이 열거하면 책 한 권 분량이 된다.
     따라서 <span style="padding:20px; margin:20px; border:1px solid; width:200px; .height:200px;">일반인은 사용빈도가 높은 일부 태그만 암기하고,</span> 나머지는
@@ -91,6 +91,7 @@ header = 눈에 보이는 게 아니라 브라우저한테 지시하는 머리�
     ---
 
 ## Block / InLine 차이점
+```html
 (Block)div >>
 "padding:20px; - 박스 내부에 공간 > 박스가 커져서 다 뭉게진다
 margin:20px; - 박스 외부 여백
@@ -102,12 +103,12 @@ width:200px;" - 너비 조절
 margin:20px; - 박스 외부 여백 행을 망가뜨리진 않는다
 border:1px solid; - 박스 만들기
 width:200px;" - 너비 조절
-
+```
 
 ---
 
 ## list
-
+```html
     <!-- ul-li : 순번 없는 리스트 -->
     <ul>
         <li>list01</li>
@@ -123,9 +124,8 @@ width:200px;" - 너비 조절
         <li>list03</li>
         <li>list04</li>
     </ol>
-
 ```
-
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -188,11 +188,9 @@ width:200px;" - 너비 조절
 
 </body>
 </html>
-
-
 ```
 ---
-```
+```html
 	ul>li*4
 ```
 ### ul태그 안에 리스트 4개를 만듦.
@@ -205,7 +203,7 @@ width:200px;" - 너비 조절
 #### 동일한 스타일링을 위한 틀
 ---
 
-```
+```html
 <!-- 클래스 선택자 : '.' -->
      <!-- .c1 -->
     <div class="c1"></div>
