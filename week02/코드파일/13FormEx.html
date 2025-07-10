@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+</head>
+<body>
+    
+    <hr/>        
+    회원 기본정보
+    <br/>
+    <br/>
+    <form action="/test.jsp" method="post">
+    <div>
+        <label for="">ID</label>
+        <input name="userid" type="text">
+        <a href="javascript:void(0)">중복확인</a>
+
+    </div>
+    <div>
+        <label for="">비밀번호</label>
+        <input name="password" type="password">
+
+    </div>
+    <div>
+        <label for="">비밀번호 확인</label>
+        <input name="re-password" type="password">
+
+    </div>
+    <div>
+        <label for="">정보관리e-mail</label>
+        <input name="inpo-mail" type="text">
+
+    </div>
+    <hr/>
+    회원 세부정보
+    <br/>
+    <br/>
+    <div>
+        <label for="">이름</label>
+        <input name="username" type="text">
+    </div>
+    <div>
+        <label for="">전화번호</label>
+        <input name="call1" type="text">
+        <input name="call2" type="text">
+        <input name="call3" type="text">
+    </div>
+    <div>
+        <label for="">휴대폰</label>
+        <input name="phone" type="text">
+    </div>
+    <div>
+        <label for="">우편번호</label>
+        <input name="call1" type="text">
+        <input name="call2" type="text">
+        <a href="javascript:void(0)">찾기</a>
+    </div>
+    <div>
+        <label for="">주소</label>
+        <input name="addr1" type="text">
+    </div>
+    <div>
+        <label for="">(상세 주소)</label>
+        <input name="addr2" type="text">
+    </div>
+    <hr/>
+    가입경로 및 정보메일 수신여부
+    <br/>
+    <br/>
+    <div> <label for="">가입 경로</label>
+        <select>
+            <option value="" selected>주위의 소개</option>
+            <option>검색</option>
+            <option>이것</option>
+            <option>저것</option>
+        </select>
+    
+    </div>
+    <div>
+        <label for="">자동회원가입방지</label>
+        <input name="protector" type="text">  159357
+    </div>
+    <div>
+        <label>메일 수신여부 | </label>
+        이벤트 및 서비스 관련 정보를 받아보시겠습니까?
+        <br/>
+        <input name="smbirth" type="radio"/> 예 (무료문자 매일 5건 받기)
+        <input name="smbirth" type="radio"/> 아니오
+        <br/>
+        통큰아이 소식도 받아보시고 SMS서비스도 무료로 이용하세요.
+    </div>
+    </form>
+
+
+
+
+
+
+    
+</body>
+</html>
