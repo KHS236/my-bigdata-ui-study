@@ -54,8 +54,8 @@ Top 기준 --> 시계방향으로 left 까지!
 
         }
 ```
-포지션 일반적인 공식
-상위는 relative
+포지션 일반적인 공식  
+상위는 relative  
 하위는 absolute
 ```html
         .p1{
