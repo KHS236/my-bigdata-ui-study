@@ -149,10 +149,10 @@ Top 기준 --> 시계방향으로 left 까지!
         
         }
 ```
-solid == 실선
-dashed == 대쉬선
-dotted == 도트점선
-double == 기준선
+solid == 실선  
+dashed == 대쉬선  
+dotted == 도트점선  
+double == 기준선  
 
 ---
 ### 원 만들기
