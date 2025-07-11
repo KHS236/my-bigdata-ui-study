@@ -379,3 +379,40 @@ h1{
 
 </html>
 ```
+---
+## FontFamily
+
+
+#### 글꼴 등록
+
+##### 방법1
+폰트 파일 경로를 link해서 불러올 수도 있으나
+인터넷 연결이 계속 필요하다.
+
+```html
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+```
+
+
+
+---
+##### 방법2
+글꼴 파일을 다운로드 받아서
+@font-face를 이용해 폰트를 등록한다
+```css
+        /* 글꼴 등록 */
+        @font-face {
+            font-family: "custom01";
+            src: url(./fonts/custom-font-01.ttf);
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'SkyblessingInjeFontTTF';
+            src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2507-1@1.0/SkyblessingInjeFontTTF.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+```
