@@ -189,4 +189,70 @@ radius를 이용해서 설정한 반지름을 가진 원모양으로 모서리�
 ```
 transparent == 보더 선 투명화
 
+---
+### 삼각형 종이접기
+
+```html
+        .d4{
+            /* 종이접기 (?) */
+            position: relative;
+            border: 1px solid orange;
+
+
+        }
+        .d4::after{
+            content:'';
+            position: absolute;
+            /* 좌상단 보더 선 안 보이도록 1픽셀씩 */
+            left: -1px;
+            top: -1px;
+
+            border-top:20px solid white;
+            border-right:20px solid orange;
+            border-bottom:20px solid orange;
+            border-left:20px solid white;
+            width: 0;
+            height: 0;
+
+        }
+```
+포스트잇 모서리가 접힌? 모양이 나온다.
+
+---
+## 오버플로우
+오버플로우 상태  
+자식이 부모보다 더 큰 경우
+
+```css
+    <style>
+        .parent{
+            width : 300px; height : 300px;
+            background-color: orange;
+
+            /* 오버플로우 영역을 hidden */
+            /* overflow : hidden; */
+
+            /* 오버플로우 영역에 스크롤바 */
+            /* overflow :scroll; */
+            /* overflow-x: scroll; */
+
+            /* 오버플로우 영역 보여줌 */
+            /* overflow: visible; */
+
+            overflow:auto;
+            /* 스크롤은 오버플로우 되지 않는 축에도
+            빈 스크롤을 만들지만
+            오토는 오버플로우 영역만 스크롤이 생긴다. */
+        }
+        .child{
+            width : 450px; height : 150px;
+            background-color: royalblue;
+        }
+    </style>
+
+```
+
+
+
+
 
