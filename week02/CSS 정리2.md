@@ -30,7 +30,7 @@ d1{
             margin-bottom:30px;
             margin-right : 40px;
 ```
-Top 기준 --> 시계방향으로 left !
+Top 기준 --> 시계방향으로 left 까지!
 
 
 <br/>
