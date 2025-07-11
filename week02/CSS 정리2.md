@@ -5,6 +5,7 @@
  - Padding
  - Border
  - Overflow
+ - Box-sizing
 
 ---
 
@@ -253,7 +254,24 @@ transparent == 보더 선 투명화
     </style>
 
 ```
+---
 
+## BoxSizing
+
+```css
+    <style>
+        div{
+            width: 300px;
+            height: 300px;
+            border: 1px solid;
+            /* box-sizing:content-box;  */
+            /* 컨텐츠 박스의 크기 */
+            box-sizing: border-box;
+            /* 보더의 크기를 포함한 크기 */
+            padding: 30px;
+        }
+    </style>
+```
 
 
 
