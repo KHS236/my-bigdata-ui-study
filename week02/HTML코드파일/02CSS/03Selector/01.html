@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* 전체 선택자 */
+        /* 선택자 : * (바디 영역에 포함된 모든 태그) */
+        *{
+            box-sizing: border-box;
+        }
+        /* 요소 선택자 */
+        /* 선택자 : 태그명 (각 태그 요소 선택) */
+        div{
+            width: 150px;
+            height: 150px;
+            border: 1px solid;
+            margin: 10px;
+        }
+        /* id선택자 : # (유일한 요소 지정) 
+        body 영역에 같은 id명으로 된 태그가 있으면 Js에서 문제가 생긴다.*/
+        #id_01{
+            background-color: rgb(79, 174, 107);
+        }
+
+        /* Class 선택자 : .클래스명 (특정 태그 그룹지정)*/
+        .c1{
+            background-color: blanchedalmond;
+            color: red;
+
+        }
+        /* 그룹 선택자 : , (여러 선택자 지정) */
+
+        #id_01,
+        .c1{
+            border-radius: 13px;
+        }
+
+
+
+    </style>
+
+
+
+
+</head>
+<body>
+
+
+    <div class="c1"></div>
+    <div id="id_01"></div>
+    <div></div>
+    <div class="c1"></div>
+    <div>
+        <p class="c1">HELLOWORLD</p>
+    </div>
+
+
+    <a class="btn btn--primary" href="./06.html">TESTA</a> 
+
+    
+</body>
+</html>

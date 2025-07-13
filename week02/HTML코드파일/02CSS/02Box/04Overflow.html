@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+    <style>
+
+        /* 오버플로우 상태  
+        > 자식이 부모보다 더 큰 경우 */
+        .parent{
+            width : 300px; height : 300px;
+            background-color: orange;
+
+            /* 오버플로우 영역을 hidden */
+            /* overflow : hidden; */
+
+            /* 오버플로우 영역을 스크롤 */
+            /* overflow :scroll; */
+            /* overflow-x: scroll; */
+
+            /* 오버플로우 영역 보여줌 */
+            /* overflow: visible; */
+            
+            overflow:auto;
+            /* 스크롤은 오버플로우 되지 않는 축에도
+            빈 스크롤을 만들지만
+            오토는 오버플로우 영역만 스크롤이 생긴다. */
+        }
+        .child{
+            width : 450px; height : 150px;
+            background-color: royalblue;
+        }
+    </style>
+
+</head>
+<body>
+    
+
+    <div class="parent">
+        <div class="child"></div>
+    </div>
+
+
+</body>
+</html>

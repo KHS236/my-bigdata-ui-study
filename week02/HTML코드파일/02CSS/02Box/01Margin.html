@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            margin: 0;
+        }
+        div{
+            width: 300px;
+            height: 300px;
+            background-color: aquamarine;
+
+        }
+        .d1{
+            /* all direction 동일 설정 */
+            /* 전체방향 20px의 여백 */
+            /* margin: 20px;*/
+            /* 2개의 값으로 위top, 아래bottom,/ 좌left, 우right */
+            /* margin: 20px 40px; */
+            /* top:10px , right:20px , bottom:30px, left는 right와 동일 */
+            /* margin: 10px 20px 30px; */
+            /* top:10px , right:20px , bottom:30px , left:40px*/
+            /* margin: 10px 20px 30px 40px; */
+            margin-top:10px;
+            margin-left:20px;
+            margin-bottom:30px;
+            margin-right : 40px;
+        }
+        /* .d2{
+            margin: 0 auto;
+
+
+        } */
+        .parent{
+            width: 80vw;
+            height: 250px;
+            margin: 20px auto;
+
+        }
+        .son{
+            background-color: rosybrown;
+            width: 150px;
+            height: 150px;
+
+        }
+
+        /* 가운데 맞추기- 01 */
+        .p1{
+            position: relative;
+
+        }
+        .s1{
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            /* 마진을 오토로 잡아주면 가운데로 고정된다 */
+
+        }
+
+        /* 가운데 맞추기 - 02 */
+        .p2{
+            display: flex;
+            justify-content: center; /*수평 배치 가운데*/
+            align-items: center; /*수직 배치 가운데*/
+        }
+
+        /* 차이점
+        1번은 자식과 상관없이 절대적인 위치를 가진다
+        2번은 고정된 위치
+        */
+    </style>
+
+</head>
+<body>
+    
+    <div class="d1">HELLOWORLD</div>
+
+    <!-- <div class="d2">HELLOWORLD</div> -->
+
+    <div class="parent p1">
+        <div class="son s1"></div>
+        <div class="son"></div>
+    </div>
+
+
+    <div class="parent p2">
+        <div class="son s2"></div>
+        <div class="son">
+    </div>
+
+
+</body>
+</html>

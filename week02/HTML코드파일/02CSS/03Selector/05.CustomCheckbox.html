@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+/* 모든 요소 box-sizing 설정 */
+* {box-sizing: border-box;}
+
+/* 체크박스 숨김 처리 */
+input[type="checkbox"] {
+    width: 150px;
+    height: 150px;
+    background-color: red;  /* 디버깅용 배경색 */
+    display: none;
+}
+
+/* 라벨 기본 스타일 (체크 전 상태) */
+input[type="checkbox"] + label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: 1px solid rgb(58, 252, 133);
+    border-radius: 18px;
+
+    background-color: rgb(125, 255, 175);
+    background-image: url("./icon_off.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 25px 25px;
+}
+
+/* 체크된 상태의 라벨 스타일 */
+input[type="checkbox"]:checked + label {
+    background-color: aquamarine;
+    background-image: url("./icon_on.svg");
+}
+
+
+    </style>
+
+
+</head>
+<body>
+
+    
+
+    <div class="chk-block">
+        <input type="checkbox" id="chk">
+        <label class="check-label" for="chk"></label>
+        <span>체크박스</span>
+    </div>
+    
+</body>
+</html>

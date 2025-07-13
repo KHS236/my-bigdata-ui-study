@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div {
+            width: 300px;
+            height: 300px;
+            margin: 30px;
+            border: 1px solid;
+        }
+        .d1{
+            /* 보더 선 형태와 색 */
+            border-top:2px solid red ;
+            border-right: 3px dashed orange;
+            border-bottom: 4px dotted blue;
+            border-left:5px double green; 
+        
+        }
+        .d2{
+            /* 보더 모서리 형태 */
+            /* border-radius: 10px; 모서리 둥글게*/
+            /* border-radius: 50%; 완전한 원*/
+
+            /* 좌측 상단을 기준으로 Top > 시계방향 !*/
+            /* 좌상,우하 / 우상 좌하 위치에 값 대입 */
+            /* border-radius: 10px 50px; */
+
+            /* 좌상/ 우상,좌하/ 우하 */
+            border-radius: 10px 50px 80px;
+
+        }
+        .d3{
+            /* 삼각형 만들기 */
+            border-top:20px solid transparent;
+            border-right:20px solid yellow;
+            border-bottom:20px solid yellow;
+            border-left:20px solid transparent;
+            /* 상단 좌단을 투명하게 > 색깔 통일>wh 0 대입 */
+
+            width: 0;
+            height: 0;
+            
+            
+        }
+        .d4{
+            /* 종이접기 (?) */
+            position: relative;
+            border: 1px solid orange;
+
+
+        }
+        /* after == 코드가 없지만 미리 효과를 준다 */
+        .d4::after{
+            content:'';
+            position: absolute;
+            /* 좌상단 보더 선 안 보이도록 1픽셀씩 */
+            left: -1px;
+            top: -1px;
+
+            border-top:20px solid white;
+            border-right:20px solid orange;
+            border-bottom:20px solid orange;
+            border-left:20px solid white;
+            width: 0;
+            height: 0;
+
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+
+
+
+    <div class="d1"></div>
+    <div class="d2"></div>
+    <div class="d3"></div>
+    <div class="d4"></div>
+
+
+</body>
+
+</html>
