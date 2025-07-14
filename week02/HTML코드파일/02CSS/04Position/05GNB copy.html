@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Global Navigation Bar -->
+
+    <style>
+        /* common */
+        *{box-sizing: border-box;}
+        ul{padding: 0;margin: 0;list-style: none;}
+        a{text-decoration: none;color: black;}
+        body{margin: 0;padding: 0;}
+
+
+
+        /* main page*/
+
+        /* header */
+        .wrapper{}
+        .wrapper>header{}
+        .wrapper>header>.top-header{}
+        .wrapper>header>nav{
+            /* 여기서 height를 잡으면 서브메뉴 크기가 더 커질 때
+            고정되기 때문에 나중에 height는 빼줘야한다. */
+            /* border: 1px solid; */
+            /* height: 50px; */
+        }
+
+        /* navi menu */
+        .wrapper>header>nav>ul.main-menu{
+            display: flex; /* 수평 배치*/
+            justify-content: space-between; /* 사이사이 간격 주기 */
+            height: 100%;
+            background-color: antiquewhite;
+            /* height 100% > 상위 nav의 height를 따름 */
+        }
+        .wrapper>header>nav>ul.main-menu>li{
+            /* border: 1px solid; */
+            height: 100%;
+            padding: 0 20px;
+            background-color: deepskyblue;
+
+            /* 중요!! */
+            position: relative;
+
+        }
+        .wrapper>header>nav>ul.main-menu>li>a{
+            display: block;
+            /* li>a 태그 메인메뉴를 블럭으로 잡는다 */
+            height: 100%;
+            line-height: 50px;
+            /* 부모의 height가 50px --> line-height 50px
+            컨텐츠 가운데 배치*/
+            color: white;
+        }
+        .wrapper>header>nav>ul.main-menu>li>ul.sub-menu{
+            /* border: 1px solid; */
+            width: 100%;
+            height: 100%;
+            /* background-color: brown; */
+            /* 중요! */
+            position: absolute;
+            left: 0;
+            top: 50px;
+
+            display: none;
+        }
+        .wrapper>header>nav>ul.main-menu>li>ul.sub-menu>li{
+            background-color: aquamarine;
+            height: 40px;
+            line-height: 40px;
+            padding: 0 25px;
+        }
+        .wrapper>header>nav>ul.main-menu>li>ul.sub-menu>a{
+            display: block;
+
+        }
+        .wrapper>header>nav>ul.main-menu:hover>li>.sub-menu{
+            display: block;
+        }
+        .wrapper>header>nav>ul.main-menu:hover{
+            height: 350px;
+        }
+
+        /* main */
+        .wrapper>main{}
+        .wrapper>main>section{}
+        /* footer */
+        .wrapper>footer{}
+    </style>
+
+
+
+
+
+
+</head>
+<body>
+    <!-- 기본구조 -->
+    <!-- .wrapper>header>.top-header+nav^main>section^footer -->
+    
+    <div class="wrapper">
+        <header>
+            <div class="top-header"></div>
+            <nav>
+
+                <!-- ul.main-menu>li*4>a[href="javascript:void(0)"]{$_MAINMENU}+ul.sub-menu>li*5>a[href="javascript:void(0)"]
+                 ul태그 안에 메인메뉴4개 안에 a태그 +ul태그 안에 서브메뉴 5개 안에 a태그 ] -->
+                <ul class="main-menu">
+                    <li>
+                        <a href="javascript:void(0)">1_MAINMENU</a>
+                        <ul class="sub-menu">
+                            <li><a href="javascript:void(0)">1_SUBMENU</a></li>
+                            <li><a href="javascript:void(0)">2_SUBMENU</a></li>
+                            <li><a href="javascript:void(0)">3_SUBMENU</a></li>
+                            <li><a href="javascript:void(0)">4_SUBMENU</a></li>
+                            <li><a href="javascript:void(0)">5_SUBMENU</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">2_MAINMENU</a>
+                        <ul class="sub-menu">
+                            <li><a href="javascript:void(0)">1_SUBMENU</a></li>
+                            <li><a href="javascript:void(0)">2_SUBMENU</a></li>
+                            <li><a href="javascript:void(0)">3_SUBMENU</a></li>
+                            <li><a href="javascript:void(0)">4_SUBMENU</a></li>
+                            <li><a href="javascript:void(0)">5_SUBMENU</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">3_MAINMENU</a>
+                        <ul class="sub-menu">
+                            <li><a href="javascript:void(0)">1_SUBMENU</a></li>
+                            <li><a href="javascript:void(0)">2_SUBMENU</a></li>
+                            <li><a href="javascript:void(0)">3_SUBMENU</a></li>
+                            <li><a href="javascript:void(0)">4_SUBMENU</a></li>
+                            <li><a href="javascript:void(0)">5_SUBMENU</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">4_MAINMENU</a>
+                        <ul class="sub-menu">
+                            <li><a href="javascript:void(0)">1_SUBMENU</a></li>
+                            <li><a href="javascript:void(0)">2_SUBMENU</a></li>
+                            <li><a href="javascript:void(0)">3_SUBMENU</a></li>
+                            <li><a href="javascript:void(0)">4_SUBMENU</a></li>
+                            <li><a href="javascript:void(0)">5_SUBMENU</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </nav>
+        </header>
+        <main>
+            <section></section>
+        </main>
+        <footer></footer>
+    </div>
+
+
+
+
+
+    
+</body>
+</html>

@@ -7,7 +7,6 @@
     <title>Document</title>
     <style>
         :root {}
-        /* rem을 사용하면 root로 기본값을 정의해주고 한 번에 컨트롤하기가 편해서 유지보수에 용이하다 */
     </style>
 </head>
 
@@ -16,7 +15,7 @@
     <!-- px : 고정크기 기본값 : 16px-->
     <div style="font-size:24px;">
         <div style="font-size:32px">HELLOWORLD</div>
-        <div style="font-size:100%">HELLOWORLD</div>
+        <div style="font-size:">HELLOWORLD</div>
         <div style="font-size:8px">HELLOWORLD</div>
         <div style="font-size:16px">HELLOWORLD</div>
     </div>
@@ -51,7 +50,6 @@
         <div style="font-size:1.5vw">HELLOWORLD</div>
         <div style="font-size:2vw;">HELLOWORLD</div>
         <div style="font-size:clamp(16px,2vw,80px);">HELLOWORLD</div>
-        <!-- clamp(최소값, 기본값, 최댓값) -->
     </div>
     <hr />
     <!-- vw :상대크기(뷰포트를 기준으로) -->

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* common */
+        *{box-sizing: border-box;}
+        ul{padding: 0;margin: 0;list-style: none;}
+        a{text-decoration: none;color: black;}
+        body{margin: 0;padding: 0;}
+
+        /* mainpage */
+
+        /* 헤더 */
+        .wrapper{}
+        .wrapper>header{}
+        .wrapper>header>.top-header{}
+        .wrapper>header>nav{
+            /* border: 1px solid; */
+            height: 35px;
+            border-bottom: 1px solid lightgray;
+        }
+        
+        /* 네비 */
+        .wrapper>header>nav>ul.main-menu{
+            display: flex; /*수평 배치*/
+            justify-content: center;
+            /* align-items: center; */
+            /* gap: 20px; */
+            height: 100%;
+            /* background-color: antiquewhite;  */
+            margin: 250px 0px;
+            /* padding: 0 300px; */
+            /* border: 1px solid; */
+        }
+        .wrapper>header>nav>ul.main-menu>li{
+            height: 100%;
+            padding:0 15px;
+            position: relative;
+        }
+        .wrapper>header>nav>ul.main-menu>li>a{
+            display: block;
+            height: 100%;
+            line-height: 35px;
+            color: black;
+        }
+        
+        
+        
+        .wrapper>header>nav>ul.main-menu>li>ul.sub-menu{
+            /* border: 1px solid; */
+            width: 150px;
+            height: auto;
+            position: absolute;
+            left: 20px;
+            top: 35px;
+            display: none;
+            padding: 10px;
+            border-right: 1px solid lightgray;
+            border-left: 1px solid lightgray;
+            border-bottom: 1px solid lightgray;
+        }
+        .wrapper>header>nav>ul.main-menu>li>ul.sub-menu>li{
+            width: 200px;
+            /* background-color:lightsteelblue; */
+            height: 30px;
+            line-height: 30px;
+            padding: 0 ;
+
+
+        }
+        .wrapper>header>nav>ul.main-menu>li>ul.sub-menu>li>a{
+            display: block;
+        }
+        .wrapper>header>nav>ul.main-menu>li:hover>.sub-menu{
+            display: block;
+        }
+
+        /* 메인 */
+        .wrapper>main{}
+        .wrapper>main>section{}
+
+
+
+        /* 푸터 */
+        .wrapper>footer{}
+
+
+        body{
+            font-size: 12px;
+        }
+    </style>
+
+
+
+</head>
+<body>
+    
+
+    <div class="wrapper">
+        <header>
+            <div class="top-header"></div>
+            <nav>
+                <ul class="main-menu">
+                    <li>
+                        <a href="javascript:void(0)">ALL</a>
+                        <ul class="sub-menu">
+                            <li><a href="javascript:void(0)">패키지</a></li>
+                            <li><a href="javascript:void(0)">신발</a></li>
+                            <li><a href="javascript:void(0)">의류</a></li>
+                            <li><a href="javascript:void(0)">kids</a></li>
+                            <li><a href="javascript:void(0)">용품</a></li>
+                            <li><a href="javascript:void(0)">Collaboration</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">BEST</a>
+                        <ul class="sub-menu">
+                            <li><a href="javascript:void(0)">패키지</a></li>
+                            <li><a href="javascript:void(0)">신발</a></li>
+                            <li><a href="javascript:void(0)">의류</a></li>
+                            <li><a href="javascript:void(0)">kids</a></li>
+                            <li><a href="javascript:void(0)">용품</a></li>
+                            <li><a href="javascript:void(0)">Collaboration</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">충무공 이순신 시리즈</a>
+                        <ul class="sub-menu">
+                            <li><a href="javascript:void(0)">패키지</a></li>
+                            <li><a href="javascript:void(0)">신발</a></li>
+                            <li><a href="javascript:void(0)">의류</a></li>
+                            <li><a href="javascript:void(0)">모자</a></li>
+                            <li><a href="javascript:void(0)">키즈</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">꿈의신소재 그래핀원단</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">친환경 소로나 원단</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">라스트 사이즈</a>
+                        <ul class="sub-menu">
+                            <li><a href="javascript:void(0)"></a>신발</li>
+                            <li><a href="javascript:void(0)"></a>의류</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">Package</a>
+                        <ul class="sub-menu">
+                            <li><a href="javascript:void(0)"></a>hero 이순신</li>
+                            <li><a href="javascript:void(0)"></a>hero 안중근</li>
+                            <li><a href="javascript:void(0)"></a>독도 패키지</li>
+                            <li><a href="javascript:void(0)"></a>광복 패키지</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">신발</a>
+                        <ul class="sub-menu">
+                            <li><a href="javascript:void(0)"></a>KR 시리즈</li>
+                            <li><a href="javascript:void(0)"></a>하티 시리즈</li>
+                            <li><a href="javascript:void(0)"></a>퀀텀 시리즈</li>
+                            <li><a href="javascript:void(0)"></a>어반 시리즈</li>
+                            <li><a href="javascript:void(0)"></a>로스터 시리즈</li>
+                            <li><a href="javascript:void(0)"></a>슬리퍼</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">의류</a>
+                        <ul class="sub-menu">
+                            <li><a href="javascript:void(0)"></a>맨투맨/후드티/긴팔티</li>
+                            <li><a href="javascript:void(0)"></a>티셔츠</li>
+                            <li><a href="javascript:void(0)"></a>팬츠</li>
+                            <li><a href="javascript:void(0)"></a>아우터</li>
+                            <li><a href="javascript:void(0)"></a>모자</li>
+                            <li><a href="javascript:void(0)"></a>양말</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">Kids</a>
+                        <ul class="sub-menu">
+                            <li><a href="javascript:void(0)"></a>상하복 세트</li>
+                            <li><a href="javascript:void(0)"></a>후드티/맨투맨</li>
+                            <li><a href="javascript:void(0)"></a>티셔츠</li>
+                            <li><a href="javascript:void(0)"></a>실내복</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">용품</a>
+                        <ul class="sub-menu">
+                            <li><a href="javascript:void(0)"></a>독도수분초</li>
+                            <li><a href="javascript:void(0)"></a>머그컵</li>
+                            <li><a href="javascript:void(0)"></a>액세서리</li>
+                            <li><a href="javascript:void(0)"></a>케이스</li>
+                            <li><a href="javascript:void(0)"></a>문구</li>
+                            <li><a href="javascript:void(0)"></a>가방</li>
+                            <li><a href="javascript:void(0)"></a>반려용품</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">마스크</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">Collaboration</a>
+                        <ul class="sub-menu">
+                            <li><a href="javascript:void(0)"></a>영화[하얼빈]</li>
+                            <li><a href="javascript:void(0)"></a>서로상점</li>
+                            <li><a href="javascript:void(0)"></a>사토꼬레아</li>
+                            <li><a href="javascript:void(0)"></a>검은사막</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">반려용품 아울렛</a>
+                    </li>
+                </ul>
+
+
+            </nav>
+        </header>
+        <main>
+            <section></section>
+        </main>
+        <footer></footer>
+    </div>
+
+
+    
+</body>
+</html>
